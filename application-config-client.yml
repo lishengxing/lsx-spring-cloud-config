@@ -4,7 +4,7 @@ spring:
   application:
      name: config-client                                 
 server:
-  port: 9092
+  port: 3355
 eureka:
   instance:
     hostname: eureka-dev                              
@@ -18,7 +18,7 @@ spring:
   application:
      name: config-client
 server:
-  port: 9093
+  port: 3366
 eureka:
   instance:
     hostname: eureka-test
