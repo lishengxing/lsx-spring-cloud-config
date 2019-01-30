@@ -1,0 +1,27 @@
+---
+spring:
+  profiles: dev
+  application:
+     name: config-client                                 
+server:
+  port: 9092
+eureka:
+  instance:
+    hostname: eureka-dev                              
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-dev:9093/eureka/      
+
+---
+spring:
+  profiles: test
+  application:
+     name: config-client
+server:
+  port: 9093
+eureka:
+  instance:
+    hostname: eureka-test
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-test:9092/eureka/
