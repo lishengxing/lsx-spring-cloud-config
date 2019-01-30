@@ -1,14 +1,17 @@
 spring:
-  profiles:
-    active:
-    - dev
+  profiles:
+    active:
+    - dev
 ---
 spring:
-  profiles: dev
-    application:
-      name: spring-cloud-config-dev #开发配置
+  profiles: dev
+  application:
+    name: spring-cloud-config-dev
 ---
 spring:
-  profiles: test
-    application:
-      name: spring-cloud-config-test
+  profiles: test
+  application:
+    name: spring-cloud-config-test
+#  请保存为UTF-8格式
+ 
+ 
