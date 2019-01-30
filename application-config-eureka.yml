@@ -1,0 +1,31 @@
+---
+spring:
+  profiles: dev
+  application:
+     name: application-config-eureka                                 
+server:
+  port: 7001
+eureka:
+  instance:
+    hostname: cloud-eureka.com                            
+  client:
+    serviceUrl:
+      defaultZone: http://cloud-eureka.com:7001/eureka/
+    registerWithEureka: false
+    fetchRegistry: false        
+
+---
+spring:
+  profiles: test
+  application:
+     name: application-config-eureka                                 
+server:
+  port: 7002
+eureka:
+  instance:
+    hostname: cloud-eureka02.com                            
+  client:
+    serviceUrl:
+      defaultZone: http://cloud-eureka02.com:7002/eureka/
+    registerWithEureka: false
+    fetchRegistry: false
